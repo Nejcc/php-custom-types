@@ -21,3 +21,29 @@ To install the package, use Composer:
 
 ```bash
 composer require nejcc/php-custom-types
+```
+
+## Usage
+
+### Custom Integer Types
+
+#### `i32` (32-bit Signed Integer)
+
+```php
+use Nejcc\CustomTypes\Types\Integer\i32;
+
+$number = new i32(123456);
+echo $number->getValue(); // Output: 123456
+```
+
+## Running Tests
+
+To run the unit tests for this package, ensure that you have PHPUnit installed and run:
+
+```bash
+./vendor/bin/phpunit
+```
+
+## License
+
+This package is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).

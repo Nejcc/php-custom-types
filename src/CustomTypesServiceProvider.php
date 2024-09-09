@@ -1,28 +1,33 @@
 <?php
 
+declare(strict_types=1);
+
 namespace Nejcc\CustomTypes;
 
 use Illuminate\Support\ServiceProvider;
 
-class CustomTypesServiceProvider extends ServiceProvider
+final class CustomTypesServiceProvider extends ServiceProvider
 {
     /**
-     * Register any application services.
-     *
-     * @return void
+     * Register any application services.                               Services
+     * --------------------------------------------------------------------------
+     * This method binds custom type classes to the service container 
+     * and makes them available throughout the Laravel application.
      */
-    public function register()
+    public function register(): void
     {
-        // Here, you could bind any classes or interfaces to the Laravel service container if needed.
+        // Register custom types or bindings here
     }
 
     /**
-     * Bootstrap any package services.
-     *
-     * @return void
+     * Bootstrap any package services.                                  Bootstraps
+     * --------------------------------------------------------------------------
+     * This method is used to bootstrap any package-specific services, 
+     * such as publishing configuration files or performing other 
+     * necessary startup tasks for the package.
      */
-    public function boot()
+    public function boot(): void
     {
-        // Any package bootstrapping logic, such as publishing configuration files, can be placed here.
+        // Bootstrapping services for the package
     }
 }

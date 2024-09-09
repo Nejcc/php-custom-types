@@ -17,11 +17,13 @@
   },
   "autoload": {
     "psr-4": {
-      "Nejcc\\CustomTypes\\Int\\": "src/Int/",
-      "Nejcc\\CustomTypes\\Float\\": "src/Float/",
-      "Nejcc\\CustomTypes\\String\\": "src/String/",
-      "Nejcc\\CustomTypes\\Tuple\\": "src/Tuple/",
-      "Nejcc\\CustomTypes\\Array\\": "src/Array/"
+      "Nejcc\\CustomTypes\\Types\\Integer\\": "src/Types/Integer/",
+      "Nejcc\\CustomTypes\\Types\\Float\\": "src/Types/Float/",
+      "Nejcc\\CustomTypes\\Types\\Char\\": "src/Types/Char/",
+      "Nejcc\\CustomTypes\\Types\\Bool\\": "src/Types/Bool/",
+      "Nejcc\\CustomTypes\\Types\\String\\": "src/Types/String/",
+      "Nejcc\\CustomTypes\\Types\\Compound\\": "src/Types/Compound/",
+      "Nejcc\\CustomTypes\\Types\\Nullable\\": "src/Types/Nullable/"
     }
   },
   "extra": {
