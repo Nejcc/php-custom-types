@@ -21,6 +21,7 @@
   },
   "autoload": {
     "psr-4": {
+      "Nejcc\\CustomTypes\\": "src/",
       "Nejcc\\CustomTypes\\Types\\Integer\\": "src/Types/Integer/",
       "Nejcc\\CustomTypes\\Types\\Float\\": "src/Types/Float/",
       "Nejcc\\CustomTypes\\Types\\Char\\": "src/Types/Char/",
