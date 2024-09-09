@@ -31,13 +31,6 @@
       "Nejcc\\CustomTypes\\Types\\Nullable\\": "src/Types/Nullable/"
     }
   },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "Nejcc\\CustomTypes\\CustomTypesServiceProvider"
-      ]
-    }
-  },
   "minimum-stability": "stable",
   "prefer-stable": true
 }
