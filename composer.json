@@ -6,11 +6,15 @@
   "authors": [
     {
       "name": "Nejc",
-      "email": "your-email@example.com"
+      "email": "nejc.cotic@gmail.com"
     }
   ],
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
   "require": {
-    "php": ">=8.3"
+    "php": ">=8.3",
+    "illuminate/support": "^10.0" // Add Laravel support package
   },
   "require-dev": {
     "phpunit/phpunit": "^10.0"
