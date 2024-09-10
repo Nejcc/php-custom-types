@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Char;
 
-use Nejcc\CustomTypes\Types\Char\Char;
+use Nejcc\CustomTypes\ScalarTypes\Character\Char;
 use PHPUnit\Framework\TestCase;
 
 final class CharTest extends TestCase
@@ -17,7 +17,7 @@ final class CharTest extends TestCase
      */
     public function testCanCreateValidChar()
     {
-        $char = new Char("A");
+        $char = new \Nejcc\CustomTypes\ScalarTypes\Character\Char("A");
         $this->assertSame("A", $char->getChar());
     }
 

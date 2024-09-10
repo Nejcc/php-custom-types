@@ -30,7 +30,7 @@ composer require nejcc/php-custom-types
 #### `i32` (32-bit Signed Integer)
 
 ```php
-use Nejcc\CustomTypes\Types\Integer\i32;
+use Nejcc\CustomTypes\ScalarTypes\Integers\Signed\i32;
 
 $number = new i32(123456);
 echo $number->getValue(); // Output: 123456

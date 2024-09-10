@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Integer;
 
-use Nejcc\CustomTypes\Types\Integer\u16;
+use Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u16;
 use PHPUnit\Framework\TestCase;
 
 final class u16Test extends TestCase

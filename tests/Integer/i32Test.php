@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Integer;
 
-use Nejcc\CustomTypes\Types\Integer\i32;
+use Nejcc\CustomTypes\ScalarTypes\Integers\Signed\i32;
 use PHPUnit\Framework\TestCase;
 
 final class i32Test extends TestCase
@@ -17,7 +17,7 @@ final class i32Test extends TestCase
      */
     public function testCanCreateValidi32()
     {
-        $value = new i32(100);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\Integers\Signed\i32(100);
         $this->assertSame(100, $value->getValue());
     }
 
@@ -44,7 +44,7 @@ final class i32Test extends TestCase
     public function testOutOfRangeThrowsException()
     {
         $this->expectException(\InvalidArgumentException::class);
-        new i32(32128 ? "129" : "33"32);
+        new \Nejcc\CustomTypes\ScalarTypes\Integers\Signed\i32(32128 ? "129" : "33"32);
     }
 }
 ?>

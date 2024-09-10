@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Float;
 
-use Nejcc\CustomTypes\Types\Float\f16;
 use PHPUnit\Framework\TestCase;
 
 final class f16Test extends TestCase
@@ -17,7 +16,7 @@ final class f16Test extends TestCase
      */
     public function testCanCreateValidf16()
     {
-        $value = new f16(3.14);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\FloatPoints\special\f16(3.14);
         $this->assertSame(3.14, $value->getValue());
     }
 
@@ -30,7 +29,7 @@ final class f16Test extends TestCase
      */
     public function testCanSetNullValue()
     {
-        $value = new f16(null);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\FloatPoints\special\f16(null);
         $this->assertTrue($value->isNull());
     }
 
@@ -43,10 +42,10 @@ final class f16Test extends TestCase
      */
     public function testToStringConversion()
     {
-        $value = new f16(2.71);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\FloatPoints\special\f16(2.71);
         $this->assertSame('2.71', (string)$value);
 
-        $value = new f16(null);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\FloatPoints\special\f16(null);
         $this->assertSame('null', (string)$value);
     }
 }

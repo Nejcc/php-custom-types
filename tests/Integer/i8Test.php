@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Integer;
 
-use Nejcc\CustomTypes\Types\Integer\i8;
+use Nejcc\CustomTypes\ScalarTypes\Integers\Signed\i8;
 use PHPUnit\Framework\TestCase;
 
 final class i8Test extends TestCase

@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Integer;
 
-use Nejcc\CustomTypes\Types\Integer\i64;
+use Nejcc\CustomTypes\ScalarTypes\Integers\Signed\i64;
 use PHPUnit\Framework\TestCase;
 
 final class i64Test extends TestCase

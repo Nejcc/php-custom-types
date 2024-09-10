@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Integer;
 
-use Nejcc\CustomTypes\Types\Integer\u8;
 use PHPUnit\Framework\TestCase;
 
 final class u8Test extends TestCase
@@ -17,7 +16,7 @@ final class u8Test extends TestCase
      */
     public function testCanCreateValidu8()
     {
-        $value = new u8(100);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u8(100);
         $this->assertSame(100, $value->getValue());
     }
 
@@ -30,7 +29,7 @@ final class u8Test extends TestCase
      */
     public function testCanSetNullValue()
     {
-        $value = new u8(null);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u8(null);
         $this->assertTrue($value->isNull());
     }
 
@@ -44,7 +43,7 @@ final class u8Test extends TestCase
     public function testOutOfRangeThrowsException()
     {
         $this->expectException(\InvalidArgumentException::class);
-        new u8(u8u8);
+        new \Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u8(u8u8);
     }
 }
 ?>

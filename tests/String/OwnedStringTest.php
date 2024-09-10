@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\String;
 
-use Nejcc\CustomTypes\Types\String\OwnedString;
+use Nejcc\CustomTypes\StringTypes\OwnedString;
 use PHPUnit\Framework\TestCase;
 
 final class OwnedStringTest extends TestCase
@@ -50,7 +50,7 @@ final class OwnedStringTest extends TestCase
      */
     public function testClearOwnedString()
     {
-        $string = new OwnedString("Hello");
+        $string = new \Nejcc\CustomTypes\StringTypes\OwnedString("Hello");
         $string->clear();
         $this->assertSame("", $string->getValue());
     }

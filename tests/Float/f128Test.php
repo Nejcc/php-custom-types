@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Float;
 
-use Nejcc\CustomTypes\Types\Float\f128;
+use Nejcc\CustomTypes\ScalarTypes\FloatPoints\special\f128;
 use PHPUnit\Framework\TestCase;
 
 final class f128Test extends TestCase
@@ -30,7 +30,7 @@ final class f128Test extends TestCase
      */
     public function testCanSetNullValue()
     {
-        $value = new f128(null);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\FloatPoints\special\f128(null);
         $this->assertTrue($value->isNull());
     }
 

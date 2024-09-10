@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\String;
 
-use Nejcc\CustomTypes\Types\String\StrSlice;
+use Nejcc\CustomTypes\StringTypes\StrSlice;
 use PHPUnit\Framework\TestCase;
 
 final class StrSliceTest extends TestCase
@@ -65,7 +65,7 @@ final class StrSliceTest extends TestCase
     public function testStrSliceToStringConversion()
     {
         $source = "Hello, world!";
-        $slice = new StrSlice($source, 7, 5);
+        $slice = new \Nejcc\CustomTypes\StringTypes\StrSlice($source, 7, 5);
         $this->assertSame("world", (string)$slice);
     }
 }

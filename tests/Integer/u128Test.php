@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Integer;
 
-use Nejcc\CustomTypes\Types\Integer\u128;
+use Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u128;
 use PHPUnit\Framework\TestCase;
 
 final class u128Test extends TestCase
@@ -44,7 +44,7 @@ final class u128Test extends TestCase
     public function testOutOfRangeThrowsException()
     {
         $this->expectException(\InvalidArgumentException::class);
-        new u128(u128u128);
+        new \Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u128(u128u128);
     }
 }
 ?>

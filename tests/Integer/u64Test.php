@@ -4,7 +4,7 @@ declare(strict_types=1);
 
 namespace Nejcc\CustomTypes\Tests\Integer;
 
-use Nejcc\CustomTypes\Types\Integer\u64;
+use Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u64;
 use PHPUnit\Framework\TestCase;
 
 final class u64Test extends TestCase
@@ -17,7 +17,7 @@ final class u64Test extends TestCase
      */
     public function testCanCreateValidu64()
     {
-        $value = new u64(100);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u64(100);
         $this->assertSame(100, $value->getValue());
     }
 
@@ -30,7 +30,7 @@ final class u64Test extends TestCase
      */
     public function testCanSetNullValue()
     {
-        $value = new u64(null);
+        $value = new \Nejcc\CustomTypes\ScalarTypes\Integers\Unsigned\u64(null);
         $this->assertTrue($value->isNull());
     }
 
