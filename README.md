@@ -23,6 +23,60 @@ To install the package, use Composer:
 composer require nejcc/php-custom-types
 ```
 
+## Tree
+```
+CustomTypes
+├── Scalar Types
+│   ├── Integer Types
+│   │   ├── Signed Integers
+│   │   │   ├── i8    (8-bit signed)
+│   │   │   ├── i16   (16-bit signed)
+│   │   │   ├── i32   (32-bit signed)
+│   │   │   ├── i64   (64-bit signed)
+│   │   │   └── i128  (128-bit signed)
+│   │   └── Unsigned Integers
+│   │       ├── u8    (8-bit unsigned)
+│   │       ├── u16   (16-bit unsigned)
+│   │       ├── u32   (32-bit unsigned)
+│   │       ├── u64   (64-bit unsigned)
+│   │       └── u128  (128-bit unsigned)
+│   ├── Floating-Point Types
+│   │   ├── f16       (16-bit floating-point)
+│   │   ├── f32       (32-bit floating-point)
+│   │   ├── f64       (64-bit floating-point)
+│   │   └── f128      (128-bit floating-point)
+│   ├── Character Type
+│   │   └── Char      (Single Unicode character)
+│   └── Boolean Type
+│       └── Bool      (Boolean, true or false)
+├── Compound Types
+│   ├── Tuple
+│   │   └── Tuple (Fixed-size collection of heterogeneous values)
+│   └── FixedArray
+│       └── FixedArray (Fixed-size collection of homogeneous values)
+├── String Types
+│   ├── StrSlice      (Immutable string slice)
+│   └── OwnedString   (Owned, mutable string)
+├── Collection Types
+│   ├── Vec           (Growable array type)
+│   ├── HashMap       (Key-value store)
+│   └── HashSet       (Unordered collection of unique values)
+├── Custom Types
+│   ├── Structs
+│   │   └── ExampleStruct (Custom user-defined data structures)
+│   └── Enums
+│       └── ExampleEnum (Custom enumerations)
+├── Smart Pointer Types
+│   ├── Box           (Single ownership heap allocation)
+│   ├── Rc            (Reference counted pointer)
+│   ├── RefCell       (Single-threaded interior mutability)
+│   └── Mutex         (Thread-safe interior mutability)
+└── Other Types
+    ├── Unit          (Represents an empty value or no value)
+    └── PhantomData   (Marker for unused generic type parameters)
+
+```
+
 ## Usage
 
 ### Custom Integer Types
